@@ -280,13 +280,12 @@
       </div>
       <div class="field">
         <label>無在庫・有在庫の比率</label>
-        <div class="radio-group">
-          <label><input type="radio" name="inventory_ratio">無在庫のみ</label>
-          <label><input type="radio" name="inventory_ratio">無在庫7：有在庫3</label>
-          <label><input type="radio" name="inventory_ratio">半々くらい</label>
-          <label><input type="radio" name="inventory_ratio">有在庫7：無在庫3</label>
-          <label><input type="radio" name="inventory_ratio">有在庫のみ</label>
+        <div class="radio-group" style="margin-bottom:.6rem;">
+          <label><input type="radio" name="inventory_type">無在庫のみ</label>
+          <label><input type="radio" name="inventory_type">有在庫のみ</label>
+          <label><input type="radio" name="inventory_type">無在庫・有在庫ハイブリッド</label>
         </div>
+        <input type="text" name="inventory_ratio" placeholder="比率をご記入ください（例：無在庫6：有在庫4）">
       </div>
       <div class="field">
         <label>仕入れ先として一番多いのはどこですか？</label>
@@ -488,14 +487,12 @@
         <label>使用中のツール（複数選択可）</label>
         <div class="check-group" style="margin-top:.4rem;">
           <label><input type="checkbox" name="使用ツール[]" value="Terapeak">Terapeak</label>
-          <label><input type="checkbox" name="使用ツール[]" value="Sellbrite">Sellbrite</label>
           <label><input type="checkbox" name="使用ツール[]" value="Payoneer">Payoneer</label>
           <label><input type="checkbox" name="使用ツール[]" value="Wise">Wise</label>
           <label><input type="checkbox" name="使用ツール[]" value="freee">freee</label>
           <label><input type="checkbox" name="使用ツール[]" value="弥生会計">弥生会計</label>
           <label><input type="checkbox" name="使用ツール[]" value="Slack">Slack</label>
-          <label><input type="checkbox" name="使用ツール[]" value="Chatwork">Chatwork</label>
-          <label><input type="checkbox" name="使用ツール[]" value="Googleスプレッドシート">Googleスプレッドシート</label>
+          <label><input type="checkbox" name="使用ツール[]" value="Googleスプレッドシート（管理・チーム共有）">Googleスプレッドシート（管理・チーム共有）</label>
           <label><input type="checkbox" name="使用ツール[]" value="ChatGPT">ChatGPT</label>
           <label><input type="checkbox" name="使用ツール[]" value="Claude">Claude</label>
           <label><input type="checkbox" name="使用ツール[]" value="Gemini">Gemini</label>
