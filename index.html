@@ -641,5 +641,12 @@
 
 </form>
 </div>
+<script>
+  document.querySelector('form').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
