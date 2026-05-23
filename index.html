@@ -281,6 +281,22 @@
           <label><input type="checkbox" name="販売国[]" value="その他">その他</label>
         </div>
       </div>
+      <div class="field">
+        <label>eBay以外の販路はありますか？</label>
+        <div class="hint">複数選択可</div>
+        <div class="check-group" style="margin-top:.4rem;">
+          <label><input type="checkbox" name="他販路[]" value="Instagram">Instagram</label>
+          <label><input type="checkbox" name="他販路[]" value="BASE">BASE</label>
+          <label><input type="checkbox" name="他販路[]" value="STORES">STORES</label>
+          <label><input type="checkbox" name="他販路[]" value="Shopify">Shopify</label>
+          <label><input type="checkbox" name="他販路[]" value="直接取引">直接取引</label>
+          <label><input type="checkbox" name="他販路[]" value="Amazon">Amazon</label>
+          <label><input type="checkbox" name="他販路[]" value="メルカリ">メルカリ</label>
+          <label><input type="checkbox" name="他販路[]" value="Yahoo!ショッピング">Yahoo!ショッピング</label>
+          <label><input type="checkbox" name="他販路[]" value="なし">なし</label>
+        </div>
+        <input type="text" name="他販路_その他" style="margin-top:.6rem;" placeholder="その他の販路（自由記入）">
+      </div>
     </div>
   </div>
 
@@ -448,6 +464,7 @@
           <label><input type="checkbox" name="使用ツール[]" value="Googleスプレッドシート">Googleスプレッドシート</label>
           <label><input type="checkbox" name="使用ツール[]" value="ChatGPT">ChatGPT</label>
           <label><input type="checkbox" name="使用ツール[]" value="Claude">Claude</label>
+          <label><input type="checkbox" name="使用ツール[]" value="Gemini">Gemini</label>
         </div>
       </div>
       <div class="field">
@@ -500,7 +517,12 @@
       </div>
       <div class="field">
         <label>この事業を将来どうしていきたいですか？（最終ビジョン）</label>
-        <textarea name="最終ビジョン" placeholder="例：売上●億円まで拡大 / 法人化して安定収益を得る / 副業として無理なく継続 など"></textarea>
+        <div class="radio-group" style="margin-bottom:.6rem;">
+          <label><input type="radio" name="最終ビジョン選択">M&Aによる売却</label>
+          <label><input type="radio" name="最終ビジョン選択">自分の作業をなくし、完全自動化・委任</label>
+          <label><input type="radio" name="最終ビジョン選択">その他</label>
+        </div>
+        <textarea name="最終ビジョン詳細" placeholder="具体的なイメージがあればご記入ください。"></textarea>
       </div>
     </div>
   </div>
@@ -512,16 +534,6 @@
       <div class="section-title">投資・リソース</div>
     </div>
     <div class="section-body">
-      <div class="field">
-        <label>コンサル・ツール導入に充てられる予算感</label>
-        <div class="radio-group">
-          <label><input type="radio" name="budget">〜10万円</label>
-          <label><input type="radio" name="budget">10〜30万円</label>
-          <label><input type="radio" name="budget">30〜50万円</label>
-          <label><input type="radio" name="budget">50万円以上</label>
-          <label><input type="radio" name="budget">成果次第で相談したい</label>
-        </div>
-      </div>
       <div class="field">
         <label>導入作業・勉強に使える時間</label>
         <input type="text" name="使える時間" placeholder="例：週5時間程度">
@@ -554,8 +566,12 @@
     </div>
     <div class="section-body">
       <div class="field">
+        <label>他に聞いておいてほしいこと・確認しておきたいことはありますか？</label>
+        <textarea name="その他確認事項" style="min-height:80px;" placeholder="例：既存ツールとの連携について、チームへの説明方法、費用感 など"></textarea>
+      </div>
+      <div class="field">
         <label>ご要望・ご質問・気になっていることなど、自由にご記入ください</label>
-        <textarea name="自由記述" style="min-height:120px;" placeholder="どんな小さなことでも構いません。"></textarea>
+        <textarea name="自由記述" style="min-height:100px;" placeholder="どんな小さなことでも構いません。"></textarea>
       </div>
     </div>
   </div>
