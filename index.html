@@ -218,7 +218,7 @@
           <input type="text" name="担当者名" placeholder="例：山田 太郎">
         </div>
       </div>
-      <div class="row col2">
+      <div class="row col3">
         <div class="field">
           <label>ご連絡先（メール）</label>
           <input type="text" name="メールアドレス" placeholder="例：info@example.com">
@@ -227,10 +227,18 @@
           <label>eBay販売歴</label>
           <input type="text" name="eBay販売歴" placeholder="例：3年2ヶ月">
         </div>
+        <div class="field">
+          <label>eBayアカウント数</label>
+          <input type="text" name="eBayアカウント数" placeholder="例：3アカウント">
+        </div>
       </div>
       <div class="field">
         <label>メインの販売カテゴリ</label>
         <input type="text" name="メイン販売カテゴリ" placeholder="例：家電、アパレル、スポーツ用品 など">
+      </div>
+      <div class="field">
+        <label>扱っている商材</label>
+        <input type="text" name="扱っている商材" placeholder="例：古着・ヴィンテージ衣料、中古カメラ、ブランド品、電子部品 など">
       </div>
     </div>
   </div>
@@ -265,6 +273,28 @@
           <label>おおよその粗利率</label>
           <input type="text" name="粗利率" placeholder="例：25〜30%">
         </div>
+      </div>
+      <div class="field">
+        <label>無在庫・有在庫の比率</label>
+        <div class="radio-group">
+          <label><input type="radio" name="inventory_ratio">無在庫のみ</label>
+          <label><input type="radio" name="inventory_ratio">無在庫7：有在庫3</label>
+          <label><input type="radio" name="inventory_ratio">半々くらい</label>
+          <label><input type="radio" name="inventory_ratio">有在庫7：無在庫3</label>
+          <label><input type="radio" name="inventory_ratio">有在庫のみ</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>仕入れ先として一番多いのはどこですか？</label>
+        <div class="radio-group">
+          <label><input type="radio" name="仕入れ先メイン">フリマ系（メルカリ・ラクマ等）</label>
+          <label><input type="radio" name="仕入れ先メイン">日本市場のECサイト（Amazon・楽天等）</label>
+          <label><input type="radio" name="仕入れ先メイン">リサイクルショップ・オフライン</label>
+          <label><input type="radio" name="仕入れ先メイン">問屋・メーカー直取引</label>
+          <label><input type="radio" name="仕入れ先メイン">オークション（ヤフオク等）</label>
+          <label><input type="radio" name="仕入れ先メイン">その他</label>
+        </div>
+        <input type="text" name="仕入れ先補足" style="margin-top:.5rem;" placeholder="具体的な仕入れ先・サービス名があればご記入ください">
       </div>
       <div class="field">
         <label>販売している国</label>
@@ -517,7 +547,7 @@
       </div>
       <div class="field">
         <label>この事業を将来どうしていきたいですか？（最終ビジョン）</label>
-        <textarea name="最終ビジョン" placeholder="例：M&Aによる売却 / 自分の作業をゼロにして完全委任 / 徹底的なコストカットで利益率を最大化 / 売上●億円まで拡大して法人化 など"></textarea>
+        <textarea name="最終ビジョン" placeholder="例：M&Aによる売却 / 自分の作業をゼロにして完全委任 / 徹底的なコストカットで利益率を最大化 など"></textarea>
       </div>
     </div>
   </div>
