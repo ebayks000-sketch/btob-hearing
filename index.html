@@ -194,6 +194,12 @@
 </div>
 
 <div class="container">
+<form action="https://formsubmit.co/ebay.ks000@gmail.com" method="POST">
+  <!-- FormSubmit 設定 -->
+  <input type="hidden" name="_subject" value="【BtoB AI自動化コンサル】ヒアリングシートが届きました">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://ebayks000-sketch.github.io/btob-hearing/?thanks=1">
 
   <!-- 1. 基本情報 -->
   <div class="section">
@@ -205,26 +211,26 @@
       <div class="row col2">
         <div class="field">
           <label>会社名 / 屋号</label>
-          <input type="text" placeholder="例：〇〇商事">
+          <input type="text" name="会社名" placeholder="例：〇〇商事">
         </div>
         <div class="field">
           <label>担当者名</label>
-          <input type="text" placeholder="例：山田 太郎">
+          <input type="text" name="担当者名" placeholder="例：山田 太郎">
         </div>
       </div>
       <div class="row col2">
         <div class="field">
           <label>ご連絡先（メール）</label>
-          <input type="text" placeholder="例：info@example.com">
+          <input type="text" name="メールアドレス" placeholder="例：info@example.com">
         </div>
         <div class="field">
           <label>eBay販売歴</label>
-          <input type="text" placeholder="例：3年2ヶ月">
+          <input type="text" name="eBay販売歴" placeholder="例：3年2ヶ月">
         </div>
       </div>
       <div class="field">
         <label>メインの販売カテゴリ</label>
-        <input type="text" placeholder="例：家電、アパレル、スポーツ用品 など">
+        <input type="text" name="メイン販売カテゴリ" placeholder="例：家電、アパレル、スポーツ用品 など">
       </div>
     </div>
   </div>
@@ -239,40 +245,40 @@
       <div class="row col2">
         <div class="field">
           <label>直近12ヶ月の年商（売上高）</label>
-          <input type="text" placeholder="例：1,200万円">
+          <input type="text" name="年商" placeholder="例：1,200万円">
         </div>
         <div class="field">
           <label>月間平均売上</label>
-          <input type="text" placeholder="例：100万円">
+          <input type="text" name="月間平均売上" placeholder="例：100万円">
         </div>
       </div>
       <div class="row col3">
         <div class="field">
           <label>月間販売件数（目安）</label>
-          <input type="text" placeholder="例：150件">
+          <input type="text" name="月間販売件数" placeholder="例：150件">
         </div>
         <div class="field">
           <label>アクティブ出品数</label>
-          <input type="text" placeholder="例：300件">
+          <input type="text" name="アクティブ出品数" placeholder="例：300件">
         </div>
         <div class="field">
           <label>おおよその粗利率</label>
-          <input type="text" placeholder="例：25〜30%">
+          <input type="text" name="粗利率" placeholder="例：25〜30%">
         </div>
       </div>
       <div class="field">
         <label>販売している国</label>
         <div class="hint">複数選択可</div>
         <div class="check-group" style="margin-top:.4rem;">
-          <label><input type="checkbox">US</label>
-          <label><input type="checkbox">UK</label>
-          <label><input type="checkbox">AU</label>
-          <label><input type="checkbox">CA</label>
-          <label><input type="checkbox">DE</label>
-          <label><input type="checkbox">FR</label>
-          <label><input type="checkbox">IT</label>
-          <label><input type="checkbox">ES</label>
-          <label><input type="checkbox">その他</label>
+          <label><input type="checkbox" name="販売国[]" value="US">US</label>
+          <label><input type="checkbox" name="販売国[]" value="UK">UK</label>
+          <label><input type="checkbox" name="販売国[]" value="AU">AU</label>
+          <label><input type="checkbox" name="販売国[]" value="CA">CA</label>
+          <label><input type="checkbox" name="販売国[]" value="DE">DE</label>
+          <label><input type="checkbox" name="販売国[]" value="FR">FR</label>
+          <label><input type="checkbox" name="販売国[]" value="IT">IT</label>
+          <label><input type="checkbox" name="販売国[]" value="ES">ES</label>
+          <label><input type="checkbox" name="販売国[]" value="その他">その他</label>
         </div>
       </div>
     </div>
@@ -288,28 +294,28 @@
       <div class="row col3">
         <div class="field">
           <label>正社員数</label>
-          <input type="text" placeholder="例：3名">
+          <input type="text" name="正社員数" placeholder="例：3名">
         </div>
         <div class="field">
           <label>アルバイト・パート数</label>
-          <input type="text" placeholder="例：2名">
+          <input type="text" name="アルバイト数" placeholder="例：2名">
         </div>
         <div class="field">
           <label>外注（業務委託）</label>
-          <input type="text" placeholder="例：写真撮影1名">
+          <input type="text" name="外注数" placeholder="例：写真撮影1名">
         </div>
       </div>
       <div class="field">
         <label>各メンバーの主な担当業務</label>
         <div class="hint">役職・氏名は不要です。業務内容のみ記入してください。</div>
-        <textarea placeholder="例）
+        <textarea name="メンバー担当業務" placeholder="例）
 ・仕入れリサーチ・出品担当：2名
 ・バイヤー対応・梱包担当：1名（パート）
 ・経理・在庫管理：自分"></textarea>
       </div>
       <div class="field">
         <label>外注している業務の内容</label>
-        <input type="text" placeholder="例：商品写真撮影、翻訳、確定申告 など">
+        <input type="text" name="外注業務詳細" placeholder="例：商品写真撮影、翻訳、確定申告 など">
       </div>
     </div>
   </div>
@@ -338,52 +344,52 @@
           <tbody>
             <tr>
               <td class="task-name">仕入れリサーチ</td>
-              <td><input type="text" placeholder="自分 / アルバイト"></td>
-              <td><input type="text" placeholder="Terapeak、手動検索 など"></td>
-              <td><input type="text" placeholder="約〇時間"></td>
-              <td><input type="text" placeholder=""></td>
+              <td><input type="text" name="仕入れ_担当" placeholder="自分 / アルバイト"></td>
+              <td><input type="text" name="仕入れ_方法" placeholder="Terapeak、手動検索 など"></td>
+              <td><input type="text" name="仕入れ_時間" placeholder="約〇時間"></td>
+              <td><input type="text" name="仕入れ_備考" placeholder=""></td>
             </tr>
             <tr>
               <td class="task-name">出品作業</td>
-              <td><input type="text" placeholder=""></td>
-              <td><input type="text" placeholder="テンプレート、手作業 など"></td>
-              <td><input type="text" placeholder="約〇時間"></td>
-              <td><input type="text" placeholder="1件あたり約〇分"></td>
+              <td><input type="text" name="出品_担当" placeholder=""></td>
+              <td><input type="text" name="出品_方法" placeholder="テンプレート、手作業 など"></td>
+              <td><input type="text" name="出品_時間" placeholder="約〇時間"></td>
+              <td><input type="text" name="出品_備考" placeholder="1件あたり約〇分"></td>
             </tr>
             <tr>
               <td class="task-name">バイヤー対応</td>
-              <td><input type="text" placeholder=""></td>
-              <td><input type="text" placeholder="eBayメッセージ、手動返信 など"></td>
-              <td><input type="text" placeholder="約〇時間"></td>
-              <td><input type="text" placeholder="1日〇件程度"></td>
+              <td><input type="text" name="バイヤー対応_担当" placeholder=""></td>
+              <td><input type="text" name="バイヤー対応_方法" placeholder="eBayメッセージ、手動返信 など"></td>
+              <td><input type="text" name="バイヤー対応_時間" placeholder="約〇時間"></td>
+              <td><input type="text" name="バイヤー対応_備考" placeholder="1日〇件程度"></td>
             </tr>
             <tr>
               <td class="task-name">発送・物流手配</td>
-              <td><input type="text" placeholder=""></td>
-              <td><input type="text" placeholder="CPaSS、EMS など"></td>
-              <td><input type="text" placeholder="約〇時間"></td>
-              <td><input type="text" placeholder=""></td>
+              <td><input type="text" name="発送_担当" placeholder=""></td>
+              <td><input type="text" name="発送_方法" placeholder="CPaSS、EMS など"></td>
+              <td><input type="text" name="発送_時間" placeholder="約〇時間"></td>
+              <td><input type="text" name="発送_備考" placeholder=""></td>
             </tr>
             <tr>
               <td class="task-name">在庫管理</td>
-              <td><input type="text" placeholder=""></td>
-              <td><input type="text" placeholder="Excel、スプレッドシート など"></td>
-              <td><input type="text" placeholder="約〇時間"></td>
-              <td><input type="text" placeholder=""></td>
+              <td><input type="text" name="在庫_担当" placeholder=""></td>
+              <td><input type="text" name="在庫_方法" placeholder="Excel、スプレッドシート など"></td>
+              <td><input type="text" name="在庫_時間" placeholder="約〇時間"></td>
+              <td><input type="text" name="在庫_備考" placeholder=""></td>
             </tr>
             <tr>
               <td class="task-name">売上・利益分析</td>
-              <td><input type="text" placeholder=""></td>
-              <td><input type="text" placeholder="手動集計、ツール など"></td>
-              <td><input type="text" placeholder="月〇時間"></td>
-              <td><input type="text" placeholder=""></td>
+              <td><input type="text" name="分析_担当" placeholder=""></td>
+              <td><input type="text" name="分析_方法" placeholder="手動集計、ツール など"></td>
+              <td><input type="text" name="分析_時間" placeholder="月〇時間"></td>
+              <td><input type="text" name="分析_備考" placeholder=""></td>
             </tr>
             <tr>
               <td class="task-name">経理・帳簿</td>
-              <td><input type="text" placeholder=""></td>
-              <td><input type="text" placeholder="freee、弥生、税理士 など"></td>
-              <td><input type="text" placeholder="月〇時間"></td>
-              <td><input type="text" placeholder=""></td>
+              <td><input type="text" name="経理_担当" placeholder=""></td>
+              <td><input type="text" name="経理_方法" placeholder="freee、弥生、税理士 など"></td>
+              <td><input type="text" name="経理_時間" placeholder="月〇時間"></td>
+              <td><input type="text" name="経理_備考" placeholder=""></td>
             </tr>
           </tbody>
         </table>
@@ -401,22 +407,22 @@
       <div class="field">
         <label>一番時間がかかっていて、削減したい業務（上位3つ）</label>
         <div class="row col3">
-          <input type="text" placeholder="1位：">
-          <input type="text" placeholder="2位：">
-          <input type="text" placeholder="3位：">
+          <input type="text" name="削減したい業務1位" placeholder="1位：">
+          <input type="text" name="削減したい業務2位" placeholder="2位：">
+          <input type="text" name="削減したい業務3位" placeholder="3位：">
         </div>
       </div>
       <div class="field">
         <label>ミス・トラブルが起きやすい業務</label>
-        <input type="text" placeholder="例：返信漏れ、誤送、在庫ミス など">
+        <input type="text" name="ミスが起きやすい業務" placeholder="例：返信漏れ、誤送、在庫ミス など">
       </div>
       <div class="field">
         <label>「もう1人いれば楽なのに」と感じる場面</label>
-        <input type="text" placeholder="例：注文が重なったときの梱包・発送 など">
+        <input type="text" name="人手が欲しい場面" placeholder="例：注文が重なったときの梱包・発送 など">
       </div>
       <div class="field">
         <label>今すぐ解決したい問題（ベスト1）</label>
-        <textarea placeholder="具体的にご記入ください。" style="min-height:70px;"></textarea>
+        <textarea name="最優先の課題" placeholder="具体的にご記入ください。" style="min-height:70px;"></textarea>
       </div>
     </div>
   </div>
@@ -431,22 +437,22 @@
       <div class="field">
         <label>使用中のツール（複数選択可）</label>
         <div class="check-group" style="margin-top:.4rem;">
-          <label><input type="checkbox">Terapeak</label>
-          <label><input type="checkbox">Sellbrite</label>
-          <label><input type="checkbox">Payoneer</label>
-          <label><input type="checkbox">Wise</label>
-          <label><input type="checkbox">freee</label>
-          <label><input type="checkbox">弥生会計</label>
-          <label><input type="checkbox">Slack</label>
-          <label><input type="checkbox">Chatwork</label>
-          <label><input type="checkbox">Googleスプレッドシート</label>
-          <label><input type="checkbox">ChatGPT</label>
-          <label><input type="checkbox">Claude</label>
+          <label><input type="checkbox" name="使用ツール[]" value="Terapeak">Terapeak</label>
+          <label><input type="checkbox" name="使用ツール[]" value="Sellbrite">Sellbrite</label>
+          <label><input type="checkbox" name="使用ツール[]" value="Payoneer">Payoneer</label>
+          <label><input type="checkbox" name="使用ツール[]" value="Wise">Wise</label>
+          <label><input type="checkbox" name="使用ツール[]" value="freee">freee</label>
+          <label><input type="checkbox" name="使用ツール[]" value="弥生会計">弥生会計</label>
+          <label><input type="checkbox" name="使用ツール[]" value="Slack">Slack</label>
+          <label><input type="checkbox" name="使用ツール[]" value="Chatwork">Chatwork</label>
+          <label><input type="checkbox" name="使用ツール[]" value="Googleスプレッドシート">Googleスプレッドシート</label>
+          <label><input type="checkbox" name="使用ツール[]" value="ChatGPT">ChatGPT</label>
+          <label><input type="checkbox" name="使用ツール[]" value="Claude">Claude</label>
         </div>
       </div>
       <div class="field">
         <label>その他使っているツール</label>
-        <input type="text" placeholder="例：独自の管理シート、在庫管理ツールなど">
+        <input type="text" name="その他ツール" placeholder="例：独自の管理シート、在庫管理ツールなど">
       </div>
       <div class="field">
         <label>AIツールの現在の使用頻度</label>
@@ -459,7 +465,7 @@
       </div>
       <div class="field">
         <label>月々のツール・サービス費用（おおよそ）</label>
-        <input type="text" placeholder="例：約5,000円 / 月">
+        <input type="text" name="月額ツール費用" placeholder="例：約5,000円 / 月">
       </div>
     </div>
   </div>
@@ -473,28 +479,28 @@
     <div class="section-body">
       <div class="field">
         <label>3ヶ月後、どんな状態になっていたら「成功」ですか？</label>
-        <textarea placeholder="例：バイヤー返信を自動化して、1日2時間を別の業務に使えるようになっている"></textarea>
+        <textarea name="3ヶ月後のゴール" placeholder="例：バイヤー返信を自動化して、1日2時間を別の業務に使えるようになっている"></textarea>
       </div>
       <div class="field">
         <label>1年後の目標</label>
         <div class="row col3">
           <div class="field">
             <label>売上目標</label>
-            <input type="text" placeholder="例：月商200万円">
+            <input type="text" name="1年後売上目標" placeholder="例：月商200万円">
           </div>
           <div class="field">
             <label>組織（人員）</label>
-            <input type="text" placeholder="例：3名体制">
+            <input type="text" name="1年後組織目標" placeholder="例：3名体制">
           </div>
           <div class="field">
             <label>自分の働き方</label>
-            <input type="text" placeholder="例：現場から離れて戦略に集中">
+            <input type="text" name="1年後働き方目標" placeholder="例：現場から離れて戦略に集中">
           </div>
         </div>
       </div>
       <div class="field">
         <label>この事業を将来どうしていきたいですか？（最終ビジョン）</label>
-        <textarea placeholder="例：売上●億円まで拡大 / 法人化して安定収益を得る / 副業として無理なく継続 など"></textarea>
+        <textarea name="最終ビジョン" placeholder="例：売上●億円まで拡大 / 法人化して安定収益を得る / 副業として無理なく継続 など"></textarea>
       </div>
     </div>
   </div>
@@ -518,7 +524,7 @@
       </div>
       <div class="field">
         <label>導入作業・勉強に使える時間</label>
-        <input type="text" placeholder="例：週5時間程度">
+        <input type="text" name="使える時間" placeholder="例：週5時間程度">
       </div>
       <div class="field">
         <label>契約・導入の意思決定は誰がしますか？</label>
@@ -549,15 +555,17 @@
     <div class="section-body">
       <div class="field">
         <label>ご要望・ご質問・気になっていることなど、自由にご記入ください</label>
-        <textarea style="min-height:120px;" placeholder="どんな小さなことでも構いません。"></textarea>
+        <textarea name="自由記述" style="min-height:120px;" placeholder="どんな小さなことでも構いません。"></textarea>
       </div>
     </div>
   </div>
 
   <div class="actions">
-    <button class="btn btn-outline" onclick="window.print()">🖨 印刷 / PDFで保存</button>
+    <button type="submit" class="btn btn-primary">✉ 送信する</button>
+    <button type="button" class="btn btn-outline" onclick="window.print()">🖨 印刷 / PDFで保存</button>
   </div>
 
+</form>
 </div>
 </body>
 </html>
