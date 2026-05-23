@@ -535,6 +535,42 @@
     </div>
     <div class="section-body">
       <div class="field">
+        <label>AIツール・サービスに月々使える金額</label>
+        <div class="radio-group">
+          <label><input type="radio" name="ai_budget">〜3,000円</label>
+          <label><input type="radio" name="ai_budget">3,000〜5,000円</label>
+          <label><input type="radio" name="ai_budget">5,000〜10,000円</label>
+          <label><input type="radio" name="ai_budget">10,000〜30,000円</label>
+          <label><input type="radio" name="ai_budget">30,000円以上</label>
+          <label><input type="radio" name="ai_budget">成果次第で相談したい</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>使用環境</label>
+        <div class="hint">ご自身・スタッフ含め、業務で使っている端末・OSをわかる範囲でご記入ください</div>
+        <div class="row col2" style="margin-top:.5rem;">
+          <div class="field">
+            <label style="font-weight:500;">ご自身の端末</label>
+            <div class="radio-group">
+              <label><input type="radio" name="own_os">Mac</label>
+              <label><input type="radio" name="own_os">Windows</label>
+              <label><input type="radio" name="own_os">両方</label>
+            </div>
+            <input type="text" name="own_spec" style="margin-top:.5rem;" placeholder="例：MacBook Air M2、Windows11 など">
+          </div>
+          <div class="field">
+            <label style="font-weight:500;">スタッフ・社員の端末</label>
+            <div class="radio-group">
+              <label><input type="radio" name="staff_os">Mac</label>
+              <label><input type="radio" name="staff_os">Windows</label>
+              <label><input type="radio" name="staff_os">両方</label>
+              <label><input type="radio" name="staff_os">スタッフなし</label>
+            </div>
+            <input type="text" name="staff_spec" style="margin-top:.5rem;" placeholder="例：全員Windows、一部Mac など">
+          </div>
+        </div>
+      </div>
+      <div class="field">
         <label>導入作業・勉強に使える時間</label>
         <input type="text" name="使える時間" placeholder="例：週5時間程度">
       </div>
